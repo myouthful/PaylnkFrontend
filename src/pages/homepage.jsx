@@ -15,7 +15,7 @@ function Homepage() {
       <Header />
       <InstantBanking />
       <WhyChooseText />
-      <div className="w-screen mt-[90px] flex items-center justify-around ">
+      <div className="w-screen mt-[90px] h-fit flex flex-col items-center gap-[30px] min-[1100px]:flex-row  justify-around ">
         <WhyChooseCard
           header="Secure Banking "
           subtext="Your Trusted Partner For Secure,Smart, And Seamless Online Banking "
@@ -68,10 +68,10 @@ function Homepage() {
       </div>
       <div className="w-screen bg-fadedWhite h-fit mb-[60px] flex flex-col items-center justify-center mt-[100px] ">
         <SimpleWayToGetStartedText />
-        <div className="w-screen mt-[55px] mb-[50px] flex justify-around ">
+        <div className="w-screen mt-[55px] mb-[50px] h-fit flex flex-col items-center gap-[30px] min-[1200px]:flex-row justify-around ">
           <WhyChooseCard
             header="Secure Banking "
-            subtext="Your Trusted Partner For Secure,Smart, And Seamless Online Banking "
+            subtext="Get E-pay from The App Store or Google Play Store And Create Your Account in Minutes "
             imgsrc={icon1}
             rounded="10px"
             gap="15px"
@@ -88,7 +88,7 @@ function Homepage() {
           />
           <WhyChooseCard
             header="Mobile Access "
-            subtext="Your Trusted Partner For Secure,Smart, And Seamless Online Banking "
+            subtext="Securely Link Your Existing Bank Account or Card to Fund Your E-Pay Account"
             imgsrc={icon2}
             gap="15px"
             iconheight="h-[55px]"
@@ -104,7 +104,7 @@ function Homepage() {
           />
           <WhyChooseCard
             header="Privacy Focused "
-            subtext="Your Trusted Partner For Secure,Smart, And Seamless Online Banking "
+            subtext="Send Money, Pay Bills, Save And Manage your Finances All from one place "
             imgsrc={icon3}
             gap="15px"
             iconheight="h-[55px]"

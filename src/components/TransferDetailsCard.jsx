@@ -5,7 +5,7 @@ import axios from 'axios';
 
 import { useState,useEffect } from "react";
 
-function AccounDetailsCard() {
+function AccounDetailsCard2() {
   //fetch user details like name, acccount balance, account number
   // pass them as props to Welcomeback,AccountBalance,AccountNumber component
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1200);
@@ -48,8 +48,8 @@ function MobileView() {
 
 function DesktopView() {
   return(
-    <div className="px-[25px] py-[25px]  h-[280px] gap-[30px] w-[88%] flex flex-col bg-cardlg bg-center bg-cover rounded-[20px] ">
-     <Welcomeback />
+    <div className="px-[25px] py-[35px]  h-[280px] gap-[30px] w-[88%] flex flex-col bg-cardlg bg-center bg-cover rounded-[20px] ">
+     {/* <Welcomeback /> */}
      <AccountBalance />
      <div className="flex justify-between items-start">
       <AccountNumber />
@@ -200,5 +200,5 @@ function TransactionHistory() {
 }
 
 
-export default AccounDetailsCard;
+export default AccounDetailsCard2;
 

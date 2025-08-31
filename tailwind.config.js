@@ -21,6 +21,10 @@ export default {
         lightgray:"#B7B4B4",
         green: "#34A853",
         linegray: "#DBDBDB",
+        lightorange: "#FFE281",
+        lightgreen: "#D3FFDE",
+        skyblue: "#E0E4FF",
+        lightpink: "#FFCFCF"
       }
     },
     fontFamily:{

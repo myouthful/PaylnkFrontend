@@ -33,9 +33,9 @@ function WhyChooseCard({
     <div
       className={`
         w-fit h-fit 
-        pt-[15px] px-[12px] 
+        pt-[35px] px-[12px] 
          rounded-[10px] 
-        bg-white drop-shadow-[0px_4px_10px_0px_rgba(0,0,,0.09)]
+        bg-white drop-shadow-[0px_4px_10px_rgba(0,0,0,0.25)] 
         `}
     >
       <CardContents
@@ -103,7 +103,7 @@ function CardContents({
   subtextwidth
 }) {
   return (
-    <div className={`w-fit h-fit gap-[${gap}] flex flex-col items-center `}>
+    <div className={`w-[300px] h-[220px]  flex flex-col items-center gap-[15px]`}>
       <Icon
         iconheight={iconheight}
         iconwitdth={iconwitdth}
@@ -112,16 +112,18 @@ function CardContents({
         imgheight={imgheight}
         imgwidth={imgwidth}
       />
-      <p
+      <div className="flex flex-col items-center gap-[20px]">
+        <p
         className={`${Headerfontfamily} ${headertextwidth} text-textprimary ${Headerfontweight} ${Headertextsize} `}
       >
         {header}
       </p>
       <p
-        className={`${subtextfontfamily} ${subtextwidth} w-[300px] text-textsecondary ${subtextfontweight} ${subtexttextsize} `}
+        className={`${subtextfontfamily} ${subtextwidth} w-[260px] text-center text-textsecondary ${subtextfontweight} ${subtexttextsize} `}
       >
         {subtext}
       </p>
+      </div>
     </div>
   );
 }
